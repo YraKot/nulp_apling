@@ -1,0 +1,62 @@
+<div class="container">
+	<div class="page-header text-center jumbotron" style="padding-top: 20px !important; padding-bottom: 20px !important;">
+		<h2>Контактна інформація</h2>
+	</div>
+
+	<div class="row">
+		<div class="col-md-5 text-center thumbnail">
+			<div class="caption">
+				<h3>Національний університет <br>"Львівська політехніка"</h3>
+			<h4>Інститут комп'ютерних наук <br>та інформаційних технологій</h4>
+			<address class="text-center">
+				<strong>Кафедра прикладної лінгвістики </strong><br>
+				вул. Митрополита Андрея 5,<br>
+				IV н. к., 131 ауд. <br>
+				<abbr title="Phone">Тел:</abbr> (+38032) 258-21-38 <br>
+				<abbr title="Phone">Тел:</abbr> (+38032) 258-23-28 <br>
+				<abbr title="Phone">Факс:</abbr> (+38032) 258-27-00 <br>
+				e-mail: <a href="mailto:#">apling.ikni@gmail.com</a><br>
+				www: <a href="http://pl.lp.edu.ua">http://pl.lp.edu.ua</a>
+			</address>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-7">
+			{{#if enquirySubmitted}}
+			<h3>Дякуємо за ваше повідомлення.</h3>
+			{{else}}
+			<form method="post">
+				<input type="hidden" name="action" value="contact">
+				<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+					<label>Прізвище, Ім'я</label>
+					<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
+				</div>
+				<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+					<label>Email</label>
+					<input type="email" name="email" class="form-control" value="{{formData.email}}">
+				</div>
+				<div class="form-group">
+					<label>Телефон</label>
+					<input type="text" name="phone" placeholder="(optional)" class="form-control" value="{{formData.phone}}">
+				</div>
+				<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
+					<label>What are you contacting us about?</label>
+					<select name="enquiryType" class="form-control">
+						<option value="">(select one)</option>
+						{{#each enquiryTypes}}
+						<option value="{{value}}">{{label}}</option>
+						{{/each}}
+					</select>
+				</div>
+				<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
+					<label>Повідомлення</label>
+					<textarea name="message" placeholder="Leave us a message..." rows="4" class="form-control">{{formData.message}}</textarea>
+				</div>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary">Надіслати</button>
+				</div>
+			</form>
+			{{/if}}
+		</div>
+		
+	</div>
+</div>
