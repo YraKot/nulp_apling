@@ -1,90 +1,48 @@
-<div class="container">
-	<div class="page-header text-center jumbotron">
-		<h2>Професорсько-викладацький склад</h2>
+<div id="staff" class="container">
+    <h4 class="text-center"><a href="/staffs">&larr; return</a></h4>
+    <div class="page-header text-center jumbotron">
+		<h2>{{{data.staff.title}}}</h2>
 	</div>
-</div>
-<div class="container">
-	<div class="row">
+    
+ <div class="row">
+        <div class="col-md-4 col-md-offset-1">
+            {{#if data.staff.image}}
+            <img src={{{ cloudinaryUrl data.staff.image width=350 crop="fit" }}}  class="thumbnail" >
+            {{/if}}
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+            {{!--<table>
+                <tr>
+                    <td><p>Науковий ступінь:</p> </td><td>{{{data.staff.degree}}}</td>
+                </tr>
+                <tr>
+                    <td><p>Посада:</p></td><td>{{{data.staff.position}}}</td>
+                </tr>
+                <tr>
+                    <td><p>Дисципліни:</p></td><td>{{{data.staff.subjects}}}</td>
+                </tr>
+                <tr>
+                    <td><p>Наукові інтереси:</p></td><td>{{{data.staff.interests}}}</td>
+                </tr>
+            </table>--}}
 
-		<div class="col-sm-4 col-md-3">
-			<div class="thumbnail">
-				<img src="http://placehold.it/300x400" alt="...">
-				<div class="caption">
-					<a href=""><h3>Антонюк Галина Дмитрівна</h3></a>
-					<p>к. філос.н., доц.</p>
-				</div>
-			</div>
-		</div>
 
-		<div class="col-sm-4 col-md-3">
-			<div class="thumbnail">
-			<img src="http://placehold.it/300x400" alt="...">
-			<div class="caption">
-				<a href=""><h3>Бордюк Людмила Володимирівна</h3></a>
-				<p>к.філол.н., доц.</p>
-			</div>
-			</div>
-		</div>
-
-		<div class="col-sm-4 col-md-3">
-			<div class="thumbnail">
-			<img src="http://placehold.it/300x400" alt="...">
-			<div class="caption">
-				<a href=""><h3>Брига Тетяна Романівна</h3></a>
-				<p>асистент</p>
-			</div>
-			</div>
-		</div>
-
-		<div class="col-sm-4 col-md-3">
-			<div class="thumbnail">
-			<img src="http://placehold.it/300x400" alt="...">
-			<div class="caption">
-				<a href=""><h3>Винничук Світлана Ярославівнa</h3></a>
-				<p>асистент</p>
-			</div>
-			</div>
-		</div>
-
-		<div class="col-sm-4 col-md-3">
-			<div class="thumbnail">
-			<img src="http://placehold.it/300x400" alt="...">
-			<div class="caption">
-				<a href=""><h3>Гайдук Марта Степанівна</h3></a>
-				<p>асистент</p>
-			</div>
-			</div>
-		</div>
-
-		<div class="col-sm-4 col-md-3">
-			<div class="thumbnail">
-			<img src="http://placehold.it/300x400" alt="...">
-			<div class="caption">
-				<a href=""><h3>Голтвян Валентина Іванівнa</h3></a>
-				<p>ст. викл.</p>
-			</div>
-			</div>
-		</div>
-
-		<div class="col-sm-4 col-md-3">
-			<div class="thumbnail">
-			<img src="http://placehold.it/300x400" alt="...">
-			<div class="caption">
-				<a href=""><h3>Голуб Іванна Юріївна</h3></a>
-				<p>к.пед.н., доц.</p>
-			</div>
-			</div>
-		</div>
-
-		<div class="col-sm-4 col-md-3">
-			<div class="thumbnail">
-			<img src="http://placehold.it/300x400" alt="...">
-			<div class="caption">
-				<a href=""><h3>Денисюк Мар’яна Ярославівна</h3></a>
-				<p>асистент</p>
-			</div>
-			</div>
-		</div>		
-		
-	</div>
+            <p>Науковий ступінь: {{{data.staff.degree}}}</p>
+            <p>Посада: {{{data.staff.position}}}</p>
+            <p>Дисципліни: {{{data.staff.subjects}}}</p>
+            <p>Наукові інтереси: {{{data.staff.interests}}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+             <h3 class="text-center">Наукові праці</h3>
+             <div class="publish">{{{data.staff.scientific}}}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">Навчально-методичні праці</h3>
+            <div class="publish">{{{data.staff.methodological}}}</div>
+        </div>
+    </div>
 </div>

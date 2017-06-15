@@ -22,7 +22,7 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'Головна', key: 'home', href: '/' },
 		{ label: 'Про Кафедру', key: 'about', pages: [ 
 			{ label: 'Історія', subkey: 'history', href: '/history' },
-			{ label: 'Колектив', subkey: 'staff', href: '/staff' },
+			{ label: 'Колектив', subkey: 'staffs', href: '/staffs' },
 			{ label: 'Керівництво', subkey: 'lead', href: '/leadership' }
 		]},
 		{ label: 'Навчання', key: 'teach', href: '/teaching'},

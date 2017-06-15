@@ -31,10 +31,10 @@
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
-							<img src="/images/logo.png" width="250px" alt="">
+							<a href="/" ><img src="/images/logo.png" width="250px" alt=""></a>
 						</div>
 						<div class="collapse navbar-collapse">
-							<ul class="nav navbar-nav navbar-left">
+							<ul class="nav navbar-nav">
 									{{# each navLinks}}
 									{{#if href}} 
 									<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
@@ -54,13 +54,6 @@
 									{{/if}}
 								{{/each}}
 							</ul>
-							<ul class="nav navbar-nav navbar-right">
-								{{#if user}}
-								<li><a href="/keystone/signout">Sign Out</a></li>
-								{{else}}
-								<li><a href="/keystone/signin">Sign In</a></li>
-								{{/if}}
-							</ul>
 						</div>
 					</div>
 				</div>
@@ -68,6 +61,7 @@
 				
 			</div>
 		</div>
+
 		<div id="body">
 			<!--
 				Flash messages allow you to display once-off status messages to users, e.g. form
@@ -105,7 +99,8 @@
 				<div id="footer">
 					<img src="/images/stack.png" height="30">
 					<img src="/images/boot.png" height="30" alt="">
-					<img src="/images/logo.svg" width="120">
+					<img src="/images/logo.svg" width="110">
+					<img src="/images/google.gif"  alt="">
 				</div>
 			</div>
 		</div>

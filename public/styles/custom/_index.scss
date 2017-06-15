@@ -1,0 +1,45 @@
+#second {
+    border-top: 3px solid red;
+    background-color: #F2F3CD;
+    padding-bottom: 20px;
+    .degree {
+        height: 300px;
+        
+        display: table;
+        a {
+            color: #fff;
+            vertical-align:middle;
+            display: table-cell;
+            span {
+                font-size: 3em;
+            }
+        }
+    }
+    .degre1 {
+        background: #2E8682;
+    }
+    .degre2 {
+        background: #65BD91;
+    }
+    .degre3 {
+        background: #AEDB8A;
+    }
+}
+
+
+#third {
+    border-top: 3px solid red;
+    padding: 60px 50px 80px 50px;
+    background-color: #F9CB8F;
+    
+    h2 {
+        margin-bottom: 50px;
+        font-size: 32px;
+        letter-spacing: 5px;
+        word-spacing: 10px;
+    }
+    p {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+}

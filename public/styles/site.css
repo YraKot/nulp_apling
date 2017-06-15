@@ -5824,14 +5824,84 @@ button.close {
 #header {
   margin-top: 0; }
 
+.gallery-image img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.navbar {
+  margin-bottom: 0; }
+  .navbar ul {
+    margin: 65px 20px 0 20px; }
+    .navbar ul li {
+      font-size: 18px; }
+
+#second {
+  border-top: 3px solid red;
+  background-color: #F2F3CD;
+  padding-bottom: 20px; }
+  #second .degree {
+    height: 300px;
+    display: table; }
+    #second .degree a {
+      color: #fff;
+      vertical-align: middle;
+      display: table-cell; }
+      #second .degree a span {
+        font-size: 3em; }
+  #second .degre1 {
+    background: #2E8682; }
+  #second .degre2 {
+    background: #65BD91; }
+  #second .degre3 {
+    background: #AEDB8A; }
+
+#third {
+  border-top: 3px solid red;
+  padding: 60px 50px 80px 50px;
+  background-color: #F9CB8F; }
+  #third h2 {
+    margin-bottom: 50px;
+    font-size: 32px;
+    letter-spacing: 5px;
+    word-spacing: 10px; }
+  #third p {
+    font-size: 18px;
+    letter-spacing: 2px; }
+
 #footer {
   height: 100px;
   background-color: #e7e7e7;
   text-align: center;
   padding: 15px 15px;
   color: #777777; }
+  #footer img {
+    margin: 20px 10px; }
 
-.gallery-image img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
+.history {
+  font-size: 16px;
+  word-spacing: 6px;
+  letter-spacing: 1px;
+  line-height: 1.8; }
+
+#staff .jumbotron {
+  margin-top: 20px;
+  padding: 35px; }
+
+#staff h3 {
+  margin: 25px;
+  font-size: 20px; }
+
+#staff h4 {
+  margin: 20px; }
+
+#staff p {
+  font-size: 16px; }
+
+#staff .publish ol li {
+  padding-left: 10px; }
+  #staff .publish ol li p {
+    text-align: justify;
+    font-size: 13px !important;
+    word-spacing: 4px;
+    line-height: 1.4; }

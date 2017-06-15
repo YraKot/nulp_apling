@@ -196,6 +196,11 @@ module.exports = function () {
 		return ('/blog/post/' + postSlug);
 	};
 
+		// direct url link to a specific staff
+	_helpers.staffUrl = function (staffSlug, options) {
+		return ('/staffs/' + staffSlug);
+	};
+
 	// might be a ghost helper
 	// used for pagination urls on blog
 	_helpers.pageUrl = function (pageNumber, options) {

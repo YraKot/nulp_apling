@@ -1,0 +1,35 @@
+#staff {
+    .jumbotron {
+        margin-top: 20px;
+        padding: 35px;
+    }
+
+    h3 {
+        margin: 25px;
+        font-size: 20px;
+    }
+
+    h4 {
+        margin: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .publish {
+        ol {
+            li {
+                padding-left: 10px;
+
+                p {
+                    text-align: justify;
+                    font-size: 13px !important;
+                    word-spacing: 4px;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+
+}
