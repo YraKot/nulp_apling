@@ -26,7 +26,7 @@
                 </tr>
             </table>--}}
 
-
+            <p>email: {{{data.staff.email}}}</p>
             <p>Науковий ступінь: {{{data.staff.degree}}}</p>
             <p>Посада: {{{data.staff.position}}}</p>
             <p>Дисципліни: {{{data.staff.subjects}}}</p>
@@ -43,6 +43,18 @@
         <div class="col-md-10 col-md-offset-1">
             <h3 class="text-center">Навчально-методичні праці</h3>
             <div class="publish">{{{data.staff.methodological}}}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+             <h3 class="text-center">Біографія</h3>
+             <div class="publish">{{{data.staff.biography}}}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">Стажування</h3>
+            <div class="publish">{{{data.staff.internship}}}</div>
         </div>
     </div>
 </div>
